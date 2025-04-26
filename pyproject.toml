@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "agentic-ai-project"
+version = "0.1.0"
+description = ""
+authors = ["murugrajagopal <murugananthamr@outlook.com>"]
+readme = "README.md"
+packages = [{ include = "agentic_ai_project", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+openai = "^1.76.0"
+langchain = "^0.3.24"
+llama-cpp-python = "^0.3.8"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
